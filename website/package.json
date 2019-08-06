@@ -1,4 +1,6 @@
 {
+  "name": "aztlan",
+  "license": "GPL-2.0",
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",

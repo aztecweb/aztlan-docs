@@ -1,11 +1,16 @@
 # Aztlan
 
-### Docker
+## Docker
 ```
 docker-compose build --pull
 ```
 
-### Server
+## Server
 ```
 docker-compose up docusaurus
+```
+
+## Build static site
+```
+docker-compose run --rm docusaurus yarn build
 ```
