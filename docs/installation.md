@@ -35,6 +35,8 @@ Run only one command to install your environment:
 $ ./environment/bin/install
 ```
 
+If you need change the default installation settings, see [configuration page](configuration.md#installenv).
+
 ## Profile
 Aztlan has a collection of alias to make environment management easier and faster. Load environment profile to your current shell:
 

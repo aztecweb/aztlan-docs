@@ -9,21 +9,26 @@ To take advantage of the commands alias you need load the profile file to your c
 ```bash
 $ source /environment/profile
 ```
+
 ## Assets
 Aztlans provide a [Webpack](https://webpack.js.org/) configuration to bundle your scripts, styles, fonts and images in two modes:
 
 ### Development
+Build assets on development mode and watch for changes:
+
 ```bash
 $ assets-watch
 ```
 
 ### Production
+Build assets on production mode:
+
 ```bash
 $ assets-build
 ```
 
 ## Code standard
-Provides a collection of tools to improve code quality.
+Provides a collection of tools to improve your code quality.
 
 ### PHPCBF
 Fixing PHP errors automatically:
@@ -33,21 +38,21 @@ $ phpqa phpcbf
 ```
 
 ### PHPCS
-PHP Code Sniffer follow the [WordPress-Coding-Standards](https://github.com/WordPress/WordPress-Coding-Standards) rules:
+PHP Code Sniffer following the [WordPress-Coding-Standards](https://github.com/WordPress/WordPress-Coding-Standards) rules:
 
 ```bash
 $ phpqa phpcs
 ```
 
 ### JSLint
-Run JavaScript linter, follow the [@wordpress/eslint-plugin](https://www.npmjs.com/package/@wordpress/eslint-plugin) rules:
+Run JavaScript linter following the [@wordpress/eslint-plugin](https://www.npmjs.com/package/@wordpress/eslint-plugin) rules:
 
 ```bash
 $ jslint
 ```
 
 ### Stylint
-Stylus linter:
+Run Stylus linter:
 
 ```bash
 $ stylint
@@ -90,11 +95,11 @@ Command line interface for WordPress. You can [check here](https://developer.wor
 $ wp plugin list
 ```
 
-## SMTP
-Aztlans comes integrated with [Xdebug](https://xdebug.org/).
+## MailCatcher
+Aztlans comes integrated with [MailCatcher](https://mailcatcher.me/). You can access http://localhost:1080 to display in a web interface.
 
 ## Docker Sync
-Aztlans comes integrated with Docker Sync. Click here to see how to integrate MacOS with Docker Sync.
+Aztlans comes integrated with [Docker Sync](http://docker-sync.io/). More Informations soon.
 
 ## Xdebug
-Aztlans comes integrated with [Xdebug](https://xdebug.org/). Click here to see how to integrate with VSCode.
+Aztlans comes integrated with [Xdebug](https://xdebug.org/). More Informations soon.

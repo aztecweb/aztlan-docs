@@ -71,6 +71,9 @@ The `environment` directory contains all necessary files to build up the Docker 
 ### inc
 The `inc` directory contains all theme classes.
 
+ - `src`: the directory contains all theme classes;
+ - `languages`: the directory contains translations for classes;
+
 ### phpqa
 Tools to analyze PHP code.
 
@@ -84,4 +87,8 @@ The `public` directory contains the WordPress installation.
 The `themes` directory contains all availables themes.
 
 ### wp-packages
-The `wp-packages` directory contains all themes and plugins insatlled via [WordPress Packagist](https://wpackagist.org/).
+The `wp-packages` directory contains all themes and plugins installed via [WordPress Packagist](https://wpackagist.org/).
+
+ - `languages`: the directory contains translations for 3rd party themes and plugins;
+ - `mu-plugins`: the directory contains must-use plugins;
+ - `private`: the directory contains the plugins and themes ZIP files, they are activated on installation.
