@@ -2,12 +2,26 @@
 version: "3.7"
 
 services:
+  # Docusaurus
   docusaurus:
-    build:
-      context: ./docker
+    image: node
     ports:
       - 3000:3000
       - 35729:35729
     volumes:
-      - ./:/app
+      - ./website:/app
+
+  # Deployer
+  deployer:
+    build:
+      context: ./docker/deployer
+      args:
+        - PHP_VERSION=7
+        - DEPLOYER_VERSION=latest
+    env_file:
+      - ./docker/deployer/deploy.env
+
+    volumes:
+      - ./deploy:/deploy
+      - ./deploy/.ssh:/root/.ssh
 
