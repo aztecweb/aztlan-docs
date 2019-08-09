@@ -1,9 +1,5 @@
 FROM node:latest
 
-WORKDIR /app/website
+EXPOSE 3000
 
-RUN yarn install
-
-CMD ["yarn", "start"]
-
-EXPOSE 3000 35729
+WORKDIR /app
