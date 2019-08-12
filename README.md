@@ -12,7 +12,7 @@ docker-compose run --rm node yarn
 
 ## Development
 ```
-docker-compose up docusaurus
+docker-compose up server
 ```
 
 ## Build
