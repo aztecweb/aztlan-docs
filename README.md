@@ -5,18 +5,19 @@
 docker-compose build --pull
 ```
 
-## Server
+## Setup
 ```
-docker-compose up docusaurus
+docker-compose run --rm node yarn
 ```
 
 ## Development
-
-docker-compose run --rm docusaurus yarn start
-
-## Build static site
 ```
-docker-compose run --rm docusaurus yarn build
+docker-compose up server
+```
+
+## Build
+```
+docker-compose run --rm node yarn build
 ```
 
 ## Deployment
