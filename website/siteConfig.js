@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
  *
@@ -18,12 +20,12 @@ const users = [
 	  infoLink: 'https://www.facebook.com',
 	  pinned: true,
 	},
-  ];
+];
 
-  const siteConfig = {
-	title: 'Aztlan', // Title for your website.
+const siteConfig = {
+	title: 'Aztlan',
 	tagline: 'A WordPress theme build on Docker',
-	url: 'https://your-docusaurus-test-site.com', // Your website URL
+	url: 'https://aztlan.aztecweb.net',
 	baseUrl: '/', // Base URL for your project */
 	// For github.io type URLs, you would set the url and baseUrl like:
 	//   url: 'https://facebook.github.io',
@@ -31,7 +33,7 @@ const users = [
 
 	// Used for publishing and more
 	projectName: 'aztlan-docs',
-	organizationName: 'aztlan',
+	organizationName: 'Aztec',
 	// For top-level user or org sites, the organization is still the same.
 	// e.g., for the https://JoelMarcey.github.io site, it would be set like...
 	//   organizationName: 'JoelMarcey'
@@ -101,7 +103,11 @@ const users = [
 
 	// You may provide arbitrary config keys to be used as needed by your
 	// template. For example, if you need your repo's URL...
-	//   repoUrl: 'https://github.com/facebook/test-site',
+	repoUrl: 'https://github.com/aztecweb/aztlan',
+
+	// Google Analytics
+	gaGtag: process.env.NODE_ENV == 'production',
+	gaTrackingId: process.env.REACT_APP_GA_TRACING_ID,
   };
 
   module.exports = siteConfig;
