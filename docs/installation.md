@@ -25,7 +25,7 @@ mkdir my_project && cd my_project
 The following command will download a latest version of the Aztlan environment on `my_project` directory:
 
 ```bash
-git archive --format=tar --remote=git@greatcode.aztecweb.net:aztecwebteam/ambiente.git HEAD | tar xf -v
+wget -qO- http://github.com/aztecweb/aztlan/archive/master.tar.gz | tar -xzf - --strip-components 1
 ```
 
 ### Installl
