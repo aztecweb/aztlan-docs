@@ -36,11 +36,19 @@ task( 'deploy:yarn', function() {
     run( 'cd {{release_path}}/website && {{bin/yarn}} build' );
 } );
 
+/**
+ * Shared files
+ */
+set( 'shared_files', [
+	'website/.env',
+] );
+
 task( 'deploy', [
 	'deploy:prepare',
 	'deploy:lock',
     'deploy:release',
 	'deploy:update_code',
+	'deploy:shared',
 	'deploy:yarn',
 	'deploy:symlink',
 	'deploy:unlock',
