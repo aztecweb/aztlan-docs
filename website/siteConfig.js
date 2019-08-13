@@ -106,7 +106,6 @@ const siteConfig = {
 	repoUrl: 'https://github.com/aztecweb/aztlan',
 
 	// Google Analytics
-	gaGtag: process.env.NODE_ENV == 'production',
 	gaTrackingId: process.env.REACT_APP_GA_TRACING_ID,
   };
 
