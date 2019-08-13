@@ -5,6 +5,8 @@ node_modules
 lib/core/metadata.js
 lib/core/MetadataBlog.js
 
+docker/deployer/deploy.env
+
 website/translated_docs
 website/build/
 website/yarn.lock
