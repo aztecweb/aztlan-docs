@@ -88,18 +88,20 @@ Installation variables...
 |PHPQA_COMPOSER	 	|wp-composer composer command    										|${COMPOSE} run --rm phpqa-composer		|
 |NPM	 			|NPM command    														|${COMPOSE} run --rm assets-node npm	|
 |WP_TITLE    		|Site title       														|WordPress      						|
-|WP_USER     		|Admin username   														|admin          						|
-|WP_PASSWORD 		|Admin password   														|admin          						|
-|WP_EMAIL    		|Admin email      														|admin@admin.com						|
+|WP_USER     		|Admin username*   														|admin          						|
+|WP_PASSWORD 		|Admin password*   														|admin          						|
+|WP_EMAIL    		|Admin email*      														|admin@admin.com						|
 |COPY_START_UPLOADS	|Define if the uploads on environment/extra/uploads must be copied 		|true									|
 |UPLOADS_DIR    	|the place where will be copied the uploads stored 						|public/packages/uploads				|
 |SET_PERMISSIONS    |Define if the permissions will be set with www-data user as owner      |true									|
 |PERMALINK    		|Define the permalink structure     									|/%postname%/							|
 |SET_PRE_COMMIT    	|Define if pre-commit will be active     								|true									|
+>\* Do not use this default values in production
 
 ### mysql.env
 
 Database variables...
+> Do not use this default values in production
 
 |Variable    			|Description            |Default    |
 |-----------------------|-----------------------|-----------|
