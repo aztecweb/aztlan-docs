@@ -56,7 +56,7 @@ The following command will download a latest version of the Aztlan environment o
 wget -qO- http://github.com/aztecweb/aztlan/archive/master.tar.gz | tar -xzf - --strip-components 1
 ```
 
-### Installl
+### Install
 Run only one command to install your environment:
 
 ```bash
@@ -66,7 +66,7 @@ $ ./environment/bin/install
 If you need change the default installation settings, see [configuration page](configuration.md#installenv).
 
 ## Restart installation
-If for any reason you have to get a clean installation, just remove all gitignore files and reset your database data. 
+If for any reason you have to get a clean installation, just remove all gitignored files and reset your database data. 
 
 For this step you must have Git installed.
 
@@ -83,8 +83,6 @@ Clears all WordPress data to allow a fresh install.
 ```bash
 $ wp db reset --yes
 ```
-
-### Rese
 
 ## Profile
 Aztlan has a collection of alias to make environment management easier and faster. Load environment profile to your current shell:
