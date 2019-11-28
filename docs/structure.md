@@ -13,35 +13,67 @@ As shown after you installed Aztlan, the install script created a directory stru
 ```text
 .
 ├── assets
-│   ├── fonts
-│   ├── js
-│   ├── stylus
+│   ├── dist
+│   ├── languages
+│   ├── node_modules
+│   └── src
+│   	├── app
+│   	|	├── fonts
+│   	|	├── js
+│   	|	└── stylus
+│   	├── blocks (guttenberg blocks)
+│   	├── common (common files to blocks, editor and app)
+│   	└── editor (styles for guttenberg editor)
+│   		└── stylus
 ├── cli
 ├── deploy
+│   └── .ssh
 ├── environment
 │   ├── bin
+│   |	└── shared
 │   ├── docker
+│   |	├── deployer
+│   |	├── livereload
+│   |	├── nginx
+│   |	├── wp-cli
+│   |	└── wp-fpm
 │   ├── env
 │   ├── extra
 │   │   └── uploads
 │   ├── initdb
+│   └── xdebug
 ├── inc
 │   ├── languages
 │   └── src
+│   	├── aztlan
+│   	|	├── assets
+│   	|	└── integration
+│   	└── setup
 ├── phpqa
 ├── public
-│   ├── wp
 │   ├── packages
+│   |	├── languages
+│   |	├── mu-plugins
+│   |	├── plugins
+│   |	├── theme
+│   |	├── upgrade
+│   |	└── uploads
+│   ├── wp
+│   |	├── wp-admin
+│   |	├── wp-content
+│   |	└── wp-includes
 ├── themes
-│   └── env-theme
-└── wp-packages
-    ├── languages
-    │   ├── plugins
-    │   └── themes
-    ├── mu-plugins
-    └── private
-        ├── plugins
-        └── themes
+│   └── aztlan
+├── wp-packages
+|   ├── languages
+|   │   ├── plugins
+|   │   └── themes
+|   ├── mu-plugins
+|   ├── private
+|   |	├── plugins
+|   |   └── themes
+|   └── vendor
+└── xdebug
 ```
 
 ## Directory Descriptions
@@ -49,9 +81,16 @@ As shown after you installed Aztlan, the install script created a directory stru
 ### assets
 All the assets are bundle by [Webpack](https://webpack.js.org/).
 
- - `fonts`: the directory contains the web fonts;
- - `js`: the directory contains ES6 modules, transpilled by [Babel](https://babeljs.io/);
- - `stylus`: the directory contains Stylus files, all modules must be included on `style.styl`.
+ - `dist`: the compiled codes for distribution;
+ - `language`: translate files for js;
+ - `node_modules`: Node packages directory;
+ - `src`: all sources files;
+ - `src/app/fonts`: the directory contains the web fonts;
+ - `src/app/js`: the directory contains ES6 modules, transpilled by [Babel](https://babeljs.io/);
+ - `src/app/stylus`: the directory contains Stylus files, all modules must be included on `style.styl`.
+ - `src/blocks`:  gutenberg blocks;
+ - `src/common`:  common files to blocks, editor and app;
+ - `src/editor`:  styles for guttenberg editor;
 
 ### cli
 The `cli` directory contains classes to extends [WP CLI](https://wp-cli.org/) commands.
@@ -63,6 +102,7 @@ The `deploy` directory contains all necessary files to [Deployer](https://deploy
 The `environment` directory contains all necessary files to build up the Docker containers.
 
  - `bin`: the directory contains environment routine scripts;
+ - `bin/shared`: shared files for others scripts;
  - `docker`: the directory contains all Dockerfiles;
  - `env`: the directory contains all environment variables;
  - `extra/uploads`: the directory contains all required uploads files for the theme to work;
@@ -80,8 +120,8 @@ Tools to analyze PHP code.
 ### public
 The `public` directory contains the WordPress installation.
 
- - `wp`: the WordPress core.
  - `package`: the `wp-content` directory.
+ - `wp`: the WordPress core.
 
 ### themes
 The `themes` directory contains all availables themes.

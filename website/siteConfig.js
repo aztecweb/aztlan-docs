@@ -31,6 +31,10 @@ const siteConfig = {
 	//   url: 'https://facebook.github.io',
 	//   baseUrl: '/test-site/',
 
+	poweredBy: "Aztec Web",
+	poweredByUrl: "https://aztecweb.net/",
+
+
 	// Used for publishing and more
 	projectName: 'aztlan-docs',
 	organizationName: 'Aztec',
