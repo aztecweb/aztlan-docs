@@ -20,16 +20,16 @@ services:
       - ./:/app
     working_dir: /app/website
 
-  # Deployer
-  deployer:
-    build:
-      context: ./docker/deployer
-      args:
-        - PHP_VERSION=7
-        - DEPLOYER_VERSION=latest
-    env_file:
-      - ./docker/deployer/deploy.env
-    volumes:
-      - ./deploy:/deploy
-      - ./deploy/.ssh:/root/.ssh
+  # # Deployer
+  # deployer:
+  #   build:
+  #     context: ./docker/deployer
+  #     args:
+  #       - PHP_VERSION=7
+  #       - DEPLOYER_VERSION=latest
+  #   env_file:
+  #     - ./docker/deployer/deploy.env
+  #   volumes:
+  #     - ./deploy:/deploy
+  #     - ./deploy/.ssh:/root/.ssh
 
