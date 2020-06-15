@@ -33,7 +33,6 @@ class Footer extends React.Component {
 					src={this.props.config.baseUrl + this.props.config.footerIcon}
 					alt={this.props.config.poweredBy}
 					target="_blank"
-					width="42"
 				/>
 				)}
 				<h3>{this.props.config.poweredBy}</h3>

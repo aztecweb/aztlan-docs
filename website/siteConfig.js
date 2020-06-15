@@ -23,7 +23,7 @@ const users = [
 ];
 
 const siteConfig = {
-	title: 'Aztlan',
+	title: '',
 	tagline: 'A WordPress theme build on Docker',
 	url: 'https://aztlan.aztecweb.net',
 	baseUrl: '/', // Base URL for your project */
@@ -31,7 +31,7 @@ const siteConfig = {
 	//   url: 'https://facebook.github.io',
 	//   baseUrl: '/test-site/',
 
-	poweredBy: "Aztec Web",
+	poweredBy: "",
 	poweredByUrl: "https://aztecweb.net/",
 
 
@@ -51,7 +51,7 @@ const siteConfig = {
 	users,
 
 	/* path to images for header/footer */
-	headerIcon: 'img/aztecweb_white.png',
+	headerIcon: 'img/aztlan.png',
 	footerIcon: 'img/aztecweb_white.png',
 	favicon: 'img/favicon.ico',
 
