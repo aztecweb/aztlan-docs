@@ -84,6 +84,16 @@ $ wp-composer
 ### PHPQA
 Composer used by PHPQA to install dependencies.
 
+## Multisite
+To execute multisite commands the configuration MULTISITE on `app.env` must be true.
+
+### Create a new site
+
+```bash
+# If the scheme is passed (http or https), the slug will be used as the URL.
+.environment/bin/multisite-create-site <slug> [--scheme]
+```
+
 ## Code standard
 Provides a collection of tools to improve your code quality.
 

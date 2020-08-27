@@ -20,29 +20,33 @@ All of configuration files for Aztlan are stored in the `environment/env` direct
 
 Application variables...
 
-|Variable    		|Description                                       	|Default                    |
-|-------------------|---------------------------------------------------|---------------------------|
-|ENV         		|Application environment: development or production	|development                |
-|DB_NAME     		|Database name										|project	                |
-|DB_USER     		|Database user										|project	                |
-|DB_PASSWORD 		|Database password									|project	                |
-|DB_HOST 	 		|Database host										|db	    		            |
-|DB_CHARSET	 		|Database charset									|utf8		                |
-|DB_COLLATE	 		|Database collate									|			                |
-|WP_LANG     		|WordPress language                                	|pt_BR                      |
-|WP_HOME     		|WordPress homepage URL                            	|http://localhost           |
-|WP_SITEURL  		|WordPress admin URL                               	|http://localhost/wp        |
-|AUTH_KEY	 		|Generate on roots.io*                             	|					        |
-|SECURE_AUTH_KEY	|Generate on roots.io*                             	|					        |
-|LOGGED_IN_KEY		|Generate on roots.io*                             	|					        |
-|NONCE_KEY			|Generate on roots.io*                            	|					        |
-|AUTH_SALT	 		|Generate on roots.io*                             	|					        |
-|SECURE_AUTH_SALT	|Generate on roots.io*                             	|					        |
-|LOGGED_IN_SALT		|Generate on roots.io*                             	|					        |
-|NONCE_SALT			|Generate on roots.io*                            	|					        |
-|WP_DEBUG    		|Enable debug mode on WordPress                    	|false                      |
-|ASSETS_URL 		|Webpack dist URL                                 	|http://localhost/assets    |
-|THEME_ACTIVE		|Active theme name                                 	|env-theme                  |
+|Variable    		|Description                                       					|Default                    |
+|-------------------|-------------------------------------------------------------------|---------------------------|
+|ENV         		|Application environment: development or production					|development                |
+|DB_NAME     		|Database name														|project	                |
+|DB_USER     		|Database user														|project	                |
+|DB_PASSWORD 		|Database password													|project	                |
+|DB_HOST 	 		|Database host														|db	    		            |
+|DB_CHARSET	 		|Database charset													|utf8		                |
+|DB_COLLATE	 		|Database collate													|			                |
+|WP_LANG     		|WordPress language                                					|pt_BR                      |
+|WP_HOME     		|WordPress homepage URL                            					|http://localhost           |
+|WP_SITEURL  		|WordPress admin URL                               					|http://localhost/wp        |
+|AUTH_KEY	 		|Generate on roots.io*                             					|					        |
+|SECURE_AUTH_KEY	|Generate on roots.io*                             					|					        |
+|LOGGED_IN_KEY		|Generate on roots.io*                             					|					        |
+|NONCE_KEY			|Generate on roots.io*                            					|					        |
+|MULTISITE			|Enable or disable multisite                       					|					        |
+|SUBDOMAIN_INSTALL	|Defines whether the installation is in a subdomain or directory	|					        |
+|DOMAIN_CURRENT_SITE|Defines which is the primary site                 					|					        |
+|PATH_CURRENT_SITE	|Defines the path of the primary site                           	|					        |
+|AUTH_SALT	 		|Generate on roots.io*                             					|					        |
+|SECURE_AUTH_SALT	|Generate on roots.io*                             					|					        |
+|LOGGED_IN_SALT		|Generate on roots.io*                             					|					        |
+|NONCE_SALT			|Generate on roots.io*                            					|					        |
+|WP_DEBUG    		|Enable debug mode on WordPress                    					|false                      |
+|ASSETS_URL 		|Webpack dist URL                                 					|http://localhost/assets    |
+|THEME_ACTIVE		|Active theme name                                 					|env-theme                  |
 *[roots.io/salts](https://roots.io/salts.html)
 
 ### build.env
