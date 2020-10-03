@@ -1,22 +1,12 @@
 ---
-id: configuration
-title: Configuration
-sidebar_label: Configuration
+id: variables
+title: Enviroment variables
+sidebar_label: Enviroment variables
 ---
 
-## Setup theme
-All themes in development are stored in the `themes` directory. Aztlan comes with `aztlan`, a boilerplate theme to get you started.
-
-You can rename the theme as you wish, but you will have to change:
-
- - The *Text Domain* on `style.css`
- - THEME_ACTIVE variable on `app.env`
- - Reinstall with `./environment/bin/install`
-
-## Environment files
 All of configuration files for Aztlan are stored in the `environment/env` directory.
 
-### app.env
+## app.env
 
 Application variables...
 
@@ -45,7 +35,7 @@ Application variables...
 |THEME_ACTIVE		|Active theme name                                 	|env-theme                  |
 *[roots.io/salts](https://roots.io/salts.html)
 
-### build.env
+## build.env
 
 Build variables...
 
@@ -56,7 +46,7 @@ Build variables...
 |REPOSITORY_NAME	|Repository name							|aztlan			|
 |WP_LANG			|WP language								|pt_BR			|
 
-### deploy.env
+## deploy.env
 
 Deploy variables...
 
@@ -75,7 +65,7 @@ Deploy variables...
 |DEP_PROD_PATH		|Production path			|				|
 |DEP_PROD_BRANCH	|Production branch			|				|
 
-### install.env
+## install.env
 
 Installation variables...
 
@@ -98,7 +88,7 @@ Installation variables...
 |SET_PRE_COMMIT    	|Define if pre-commit will be active     								|true									|
 >\* Do not use this default values in production
 
-### mysql.env
+## mysql.env
 
 Database variables...
 > Do not use this default values in production
@@ -110,7 +100,7 @@ Database variables...
 |MYSQL_USER				|Database user			|project	|
 |MYSQL_PASSWORD			|Database password		|project	|
 
-### xdebug.env
+## xdebug.env
 
 XDebug variables...
 

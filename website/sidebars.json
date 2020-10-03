@@ -1,5 +1,8 @@
 {
   "docs": {
-    "Getting started": ["installation", "configuration", "structure", "commands"]
+	"Getting started": ["why", "installation", "structure"],
+	"Configuration": ["theme", "variables"],
+	"Theme development": ["templates", "frontend", "backend"],
+	"Commands": ["commands"]
   }
 }

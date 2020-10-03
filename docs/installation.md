@@ -4,15 +4,11 @@ title: Installation
 sidebar_label: Installation
 ---
 
-Aztlan was designed from the ground up to be easily installed and used to get your **WordPress** theme up and running quickly on **Docker**.
-
-<center>**WordPress ❤ Docker**</center>
-
 ## Requirements
 
 Aztlan only requires [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) (version 1.23 or above). For OSX we recommend installing [Docker Sync](http://docker-sync.io/).
 
-If you dont have Docker, access [Docker installation](https://docs.docker.com/install/) guide.
+If you don't have Docker, access [Docker installation](https://docs.docker.com/install/) guide.
 
 ## Pre installation
 
@@ -65,25 +61,6 @@ $ ./environment/bin/install
 
 If you need change the default installation settings, see [configuration page](configuration.md#installenv).
 
-## Restart installation
-If for any reason you have to get a clean installation, just remove all gitignored files and reset your database data. 
-
-For this step you must have Git installed.
-
-### Removing gitignored files
-This command will remove all files that are not versioned by Git. Be very careful not to lose any important files.
-
-```bash
-$ git clean -xdf
-```
-
-### Reseting your database
-Clears all WordPress data to allow a fresh install.
-
-```bash
-$ wp db reset --yes
-```
-
 ## Profile
 Aztlan has a collection of alias to make environment management easier and faster. Load environment profile to your current shell:
 
@@ -102,3 +79,22 @@ $ server
 ```
 
 And run `down` to stop all started containers.
+
+## Restart installation
+If for any reason you have to get a clean installation, just remove all gitignored files and reset your database data. 
+
+For this step you must have Git installed.
+
+### Reseting your database
+Clears all WordPress data to allow a fresh install.
+
+```bash
+$ wp db reset --yes
+```
+
+### Removing gitignored files
+This command will remove all files that are not versioned by Git. Be very careful not to lose any important files.
+
+```bash
+$ git clean -xdf
+```
