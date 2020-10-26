@@ -91,7 +91,7 @@ To execute multisite commands the configuration MULTISITE on `app.env` must be t
 
 ```bash
 # If the scheme is passed (http or https), the slug will be used as the URL.
-.environment/bin/multisite-create-site <slug> [--scheme]
+environment/bin/multisite-create-site <slug> [--scheme]
 ```
 
 ## Code standard
