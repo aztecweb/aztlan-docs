@@ -36,14 +36,14 @@ Application variables...
 |SECURE_AUTH_KEY	|Generate on roots.io*                             					|					        |
 |LOGGED_IN_KEY		|Generate on roots.io*                             					|					        |
 |NONCE_KEY			|Generate on roots.io*                            					|					        |
-|MULTISITE			|Enable or disable multisite                       					|					        |
-|SUBDOMAIN_INSTALL	|Defines whether the installation is in a subdomain or directory	|					        |
-|DOMAIN_CURRENT_SITE|Defines which is the primary site                 					|					        |
-|PATH_CURRENT_SITE	|Defines the path of the primary site                           	|					        |
 |AUTH_SALT	 		|Generate on roots.io*                             					|					        |
 |SECURE_AUTH_SALT	|Generate on roots.io*                             					|					        |
 |LOGGED_IN_SALT		|Generate on roots.io*                             					|					        |
 |NONCE_SALT			|Generate on roots.io*                            					|					        |
+|MULTISITE			|Enable or disable multisite                       					|					        |
+|SUBDOMAIN_INSTALL	|Defines whether the installation is in a subdomain or directory	|					        |
+|DOMAIN_CURRENT_SITE|Defines which is the primary site                 					|					        |
+|PATH_CURRENT_SITE	|Defines the path of the primary site                           	|					        |
 |WP_DEBUG    		|Enable debug mode on WordPress                    					|false                      |
 |ASSETS_URL 		|Webpack dist URL                                 					|http://localhost/assets    |
 |THEME_ACTIVE		|Active theme name                                 					|env-theme                  |
